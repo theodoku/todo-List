@@ -19,11 +19,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Webpack-Setup Configuration <a name="about-project"></a>
+# 📖 ToDo-List <a name="about-project"></a>
 
-> A boilerplate to be used in my future projects.
+> To build a simple HTML list of To Do tasks.
 
-**Webpack Setup** This exercise is to build a simple yet powerful webpack boilerplate, which I will use  later as a starting point in my future projects
+**Todo-List Structure** This is a simple To Do App that allows users to keep track of their tasks and remove them when they have completed each task. It was built using HTML, CSS and JavaScript.
 
 <!-- BUILT WITH -->
 
@@ -32,6 +32,7 @@
 - **HTML5**
 - **CSS3**
 - **Webpack**
+- **JavaScript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +85,7 @@ Clone this repository to your desired folder:
 3. Create new directory [optional]
 4. Clone the repo using the below command
 
-**`git clone https://github.com/theodoku/Webpack-Setup-Configuration`**
+**`git clone https://github.com/theodoku/todo-List`**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +105,11 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [coming soon]
+- [Adding a new item]
+- [Removing a selected item]
+- [Marking a selected item as complete]
+- [Removing all items marked as complete at once]
+- [Reordering a selected item (as drag-and-drop)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +119,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/theodoku/1st-Capstone-Project/issues).
+Feel free to check the [issues page](https://github.com/theodoku/todo-List/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +137,7 @@ Feel free to check the [issues page](https://github.com/theodoku/1st-Capstone-Pr
 
 > I would like to thank [Microverseinc](https://github.com/microverseinc).
 
-- For the Webpack Setup Instructions👍
+- minimalist captured project https://web.archive.org/web/20180320194056/http://www.getminimalist.com:80/👍
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

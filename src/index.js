@@ -5,12 +5,12 @@ const list = document.getElementById('lists');
 const data = [
     {
         index: 0,
-        description: 'Go for shopping',
+        description: 'Go for Shopping',
         completed: false,
     },
     {
         index: 1,
-        description: 'finish To Do list project',
+        description: 'Finish To Do List Project',
         completed: false,
     },
 ];
