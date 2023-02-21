@@ -38,6 +38,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "eslint-import-resolver-webpack": "^0.13.2",
     "lodash": "^4.17.21"
   }
 }

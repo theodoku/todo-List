@@ -21,5 +21,12 @@
     "ignorePatterns": [
       "dist/",
       "build/"
-    ]
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"]
+        }
+      }
+    }
   }
