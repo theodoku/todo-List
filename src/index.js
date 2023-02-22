@@ -1,6 +1,7 @@
+/* eslint import/no-unresolved:0 */
 import './style.css';
 import addTodoItem from './modules/addTodoItem.js';
-import {getTodoTask, addTodoTask, updateTodoTask } from '.modules/storeTodoTask.js';
+import { getTodoTask, addTodoTask, updateTodoTask } from './.modules/storeTodoTask.js';
 
 const display = () => {
   const todos = getTodoTask || [];
@@ -11,7 +12,7 @@ const display = () => {
 
 display();
 
-document.getElementById('form').addEventListener('submit', (e) =>{
+document.getElementById('form').addEventListener('submit', (e) => {
   e.preventDefault();
   const todos = getTodoTask();
   const todoInput = document.getElementById('task').value;
@@ -24,7 +25,7 @@ document.getElementById('form').addEventListener('submit', (e) =>{
   if (todoInput !== '') {
     addTodoItem(todoTask);
     addTodoTask(todoTask);
-    documnet.getElementById('form').reset();
+    document.getElementById('form').reset();
   }
 });
 
@@ -35,19 +36,18 @@ inputField.forEach((todo, index) => {
     const updateInput = e.target.value;
     const todos = getTodoTask();
     todos[index].desciption = updateInput;
-    updateTodoTask(index, todos[idex].description);
+    updateTodoTask(index, todos[index].description);
     window.location.reload();
   });
 });
 inputField.forEach((todo, index) => {
   todo.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
-    const updateInput = e.target.value;
-    const todos = getTodoTask();
-    todos[index].desciption = updateInput;
-    updateTodoTask(index, todos[idex].description);
-    window.location.reload();
+      const updateInput = e.target.value;
+      const todos = getTodoTask();
+      todos[index].desciption = updateInput;
+      updateTodoTask(index, todos[index].description);
+      window.location.reload();
     }
   });
 });
-

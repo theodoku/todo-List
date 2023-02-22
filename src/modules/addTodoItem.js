@@ -1,9 +1,10 @@
+/* eslint import/no-unresolved:0 */
 import deleteTodoTask from './deleteTodoTask.js';
-import {removeTodoTask} from './storeTodoTask.js';
+import { removeTodoTask } from './storeTodoTask.js';
 
 const list = document.getElementById('lists');
 const addTodoItem = (todo) => {
-    list.innerText += `
+  list.innerText += `
     <li id=${todo.index} class="listTask" completed=${false}>
     <div class="listTaskWrapper"><input type="checkbox" name="" id="checkbox"></div>
     <input type="text" value="${todo.description} class="desciption">
@@ -15,9 +16,8 @@ const addTodoItem = (todo) => {
 };
 
 window.remove = (index) => {
-    deleteTodoTask(index);
-    removeTodoTask(index);
+  deleteTodoTask(index);
+  removeTodoTask(index);
 };
 
-export default addTodoTask;
-
+export default addTodoItem;
