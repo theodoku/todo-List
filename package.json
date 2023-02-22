@@ -1,0 +1,45 @@
+{
+  "name": "webpack-setup",
+  "version": "1.0.0",
+  "description": "A boilerplate to be used in my future projects.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theodoku/Webpack-Setup.git"
+  },
+  "keywords": [],
+  "author": "theodoku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theodoku/Webpack-Setup/issues"
+  },
+  "homepage": "https://github.com/theodoku/Webpack-Setup#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "hint": "^7.1.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "lodash": "^4.17.21"
+  }
+}
