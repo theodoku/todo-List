@@ -1,23 +1,22 @@
 /* eslint import/no-unresolved:0 */
-import deleteTodoTask from './deleteTodoTask.js';
-import { removeTodoTask } from './storeTodoTask.js';
+import remove from './deleteTodoTask.js';
 
-const list = document.getElementById('lists');
+const list = document.getElementById("lists");
 const addTodoItem = (todo) => {
-  list.innerText += `
-    <li id=${todo.index} class="listTask" completed=${false}>
-    <div class="listTaskWrapper"><input type="checkbox" name="" id="checkbox"></div>
-    <input type="text" value="${todo.description} class="desciption">
-    <button type="button" class="todoBtn" onclick="remove(${todo.index})"
-    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12.025 21.15q-1 0-1.7-.7t-.7-1.675q0-1 .7-1.7t1.675-.7q1 0 1.688.7.687.7.687 1.7 0 .975-.687 1.675-.688.7-1.663.7Zm0-6.775q-1 0-1.7-.7T9.625 12q0-1 .7-1.688.7-.687 1.675-.687 1 0 1.688.687.687.688.687 1.663 0 1-.687 1.7-.688.7-1.663.7Zm0-6.75q-1 0-1.7-.713-.7-.712-.7-1.687 0-1 .7-1.688.7-.687 1.675-.687 1 0 1.688.687.687.688.687 1.688 0 .975-.687 1.687-.688.713-1.663.713Z" /></svg>
-    </button>
+  list.innerHTML += `
+    <li id="${todo.index}" class="listTask" completed="${false}">
+      <div class="listTaskWrapper"><input type="checkbox" name="" id="checkbox"></div>
+      <input type="text" value="${todo.description}" class="description">
+      <button type="button" class="todoBtn" onclick="remove(${todo.index})">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M7 21q-.825 0-1.412-.587Q5 19.825 5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413Q17.825 21 17 21ZM17 6H7v13h10ZM9 17h2V8H9Zm4 0h2V8h-2ZM7 6v13Z"/></svg>
+      </button>
     </li>
-    `;
+  `;
 };
 
+
 window.remove = (index) => {
-  deleteTodoTask(index);
-  removeTodoTask(index);
+  remove(index);
 };
 
 export default addTodoItem;

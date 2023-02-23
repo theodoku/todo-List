@@ -1,6 +1,7 @@
-const deleteTodoTask = (index) => {
-  const todoIndex = document.getElementById(index);
-  todoIndex.remove();
-};
+function remove(index) {
+  const item = document.getElementById(index);
+  item.parentNode.removeChild(item);
+}
 
-export default deleteTodoTask;
+
+export default remove;

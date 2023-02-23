@@ -1,16 +1,49 @@
 /* eslint import/no-unresolved:0 */
 import './style.css';
 import addTodoItem from './modules/addTodoItem.js';
-import { getTodoTask, addTodoTask, updateTodoTask } from './.modules/storeTodoTask.js';
+
+const getTodoTask = () => {
+  let todos;
+  if (localStorage.getItem('todos') === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem('todos'));
+  }
+  return todos;
+};
+
+const addTodoTask = (todo) => {
+  const todos = getTodoTask();
+  todos.push(todo);
+  localStorage.setItem('todos', JSON.stringify(todos));
+};
+
+// const removeTodoTask = (index) => {
+//   const todos = getTodoTask();
+//   const deletedTodoTask = todos.filter((todo) => todo.index !== index);
+//   deletedTodoTask.forEach((todo, i) => {
+//     todo.index = i;
+//   });
+//   localStorage.setItem('todos', JSON.stringify(deletedTodoTask));
+//   window.location.reload();
+// };
+
+const updateTodoTask = (index, description) => {
+  const todos = getTodoTask();
+  const todo = todos.find((todoTask) => todoTask.index === index);
+  todo.description = description;
+  localStorage.setItem('todos', JSON.stringify(todos));
+};
 
 const display = () => {
-  const todos = getTodoTask || [];
+  const todos = getTodoTask();
   if (todos) {
     todos.map((todo) => addTodoTask(todo));
   }
 };
 
 display();
+
 
 document.getElementById('form').addEventListener('submit', (e) => {
   e.preventDefault();
