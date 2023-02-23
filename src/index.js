@@ -51,7 +51,7 @@ document.getElementById('form').addEventListener('submit', (e) => {
   const todoInput = document.getElementById('task').value;
   const todoTask = {
     index: todos.length,
-    desciption: todoInput,
+    description: todoInput,
     completed: false,
   };
 
@@ -68,7 +68,7 @@ inputField.forEach((todo, index) => {
   todo.addEventListener('change', (e) => {
     const updateInput = e.target.value;
     const todos = getTodoTask();
-    todos[index].desciption = updateInput;
+    todos[index].description = updateInput;
     updateTodoTask(index, todos[index].description);
     window.location.reload();
   });
