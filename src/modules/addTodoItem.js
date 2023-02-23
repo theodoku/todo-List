@@ -1,4 +1,3 @@
-/* eslint import/no-unresolved:0 */
 import remove from './deleteTodoTask.js';
 
 const list = document.getElementById('lists');

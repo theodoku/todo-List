@@ -1,4 +1,3 @@
-/* eslint import/no-unresolved:0 */
 import './style.css';
 import addTodoItem from './modules/addTodoItem.js';
 
