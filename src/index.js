@@ -44,7 +44,6 @@ const display = () => {
 
 display();
 
-
 document.getElementById('form').addEventListener('submit', (e) => {
   e.preventDefault();
   const todos = getTodoTask();

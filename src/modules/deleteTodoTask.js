@@ -3,5 +3,4 @@ function remove(index) {
   item.parentNode.removeChild(item);
 }
 
-
 export default remove;

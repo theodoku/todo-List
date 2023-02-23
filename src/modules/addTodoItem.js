@@ -1,7 +1,7 @@
 /* eslint import/no-unresolved:0 */
 import remove from './deleteTodoTask.js';
 
-const list = document.getElementById("lists");
+const list = document.getElementById('lists');
 const addTodoItem = (todo) => {
   list.innerHTML += `
     <li id="${todo.index}" class="listTask" completed="${false}">
@@ -13,7 +13,6 @@ const addTodoItem = (todo) => {
     </li>
   `;
 };
-
 
 window.remove = (index) => {
   remove(index);
