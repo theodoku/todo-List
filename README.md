@@ -23,7 +23,7 @@
 
 > To build a simple HTML list of To Do tasks.
 
-**Todo-List Structure** This is a simple To Do App that allows users to keep track of their tasks and remove them when they have completed each task. It was built using HTML, CSS and JavaScript.
+**Todo-List** This is a simple To Do App that allows users to keep track of their tasks and remove them when they have completed each task. It was built using HTML, CSS and JavaScript.
 
 <!-- BUILT WITH -->
 
@@ -41,6 +41,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **Webpack Boilerplate**
+- **Adding a new item**
+- **Removing a selected item**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,8 +107,6 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [Adding a new item]
-- [Removing a selected item]
 - [Marking a selected item as complete]
 - [Removing all items marked as complete at once]
 - [Reordering a selected item (as drag-and-drop)]

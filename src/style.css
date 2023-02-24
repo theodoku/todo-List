@@ -73,7 +73,7 @@ input[type='checkbox']:checked + input {
 }
 
 .desciption {
-  margin: 0;
+  width: 100%;
 }
 
 #lists {
@@ -99,4 +99,11 @@ input[type='checkbox']:checked + input {
 #checkbox {
   width: 15px;
   border-color: #c0c0c3;
+}
+
+.todoBtn {
+  border: none;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
 }
