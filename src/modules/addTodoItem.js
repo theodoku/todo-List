@@ -1,5 +1,3 @@
-import remove from './deleteTodoTask.js';
-
 const list = document.getElementById('lists');
 const addTodoItem = (todo) => {
   list.innerHTML += `
@@ -11,10 +9,6 @@ const addTodoItem = (todo) => {
       </button>
     </li>
   `;
-};
-
-window.remove = (index) => {
-  remove(index);
 };
 
 export default addTodoItem;
