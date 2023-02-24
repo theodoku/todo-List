@@ -40,10 +40,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Webpack Boilerplate**
 - **Adding a new item**
 - **Removing a selected item**
-
+- **Add a new JavaScript file and import it as a module for the status updates (completed: true / false).**
+- **Add event listener to the checkbox (change).** 
+- **Update items object's value for completed key upon user actions.**
+- **Implement a function for the "Clear all completed" button (use filter() method)**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
