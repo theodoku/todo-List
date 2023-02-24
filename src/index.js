@@ -5,7 +5,6 @@ import {
   addTodo, getTodo, removeTodo, updateTodo,
 } from './modules/storeTodo.js';
 
-
 const display = () => {
   const todos = getTodo() || [];
   if (todos) {
