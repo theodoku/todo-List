@@ -1,6 +1,7 @@
 import './style.css';
 import addTodoItem from './modules/addTodoItem.js';
 import deleteTodo from './modules/deleteTodo.js';
+import handleCompleted from './modules/handleCompleted.js';
 import {
   addTodo, getTodo, removeTodo, updateTodo,
 } from './modules/storeTodo.js';
@@ -57,3 +58,17 @@ window.remove = (index) => {
   deleteTodo(index);
   removeTodo(index);
 };
+
+window.completedTodo = (index) => {
+  handleCompleted(index);
+};
+
+document.getElementById('allCompleted').addEventListener('click', () => {
+  const todos = getTodo();
+  const allCompleted = todos.filter((todo) => !todo.completed);
+  allCompleted.forEach((todo, i) => {
+    todo.index = i;
+  });
+  localStorage.setItem('todos', JSON.stringify(allCompleted));
+  window.location.reload();
+});
