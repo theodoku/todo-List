@@ -54,7 +54,7 @@
 
 > Link to deployed project.
 
-- [coming soon!]
+- [https://theodoku.github.io/todo-List/dist/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
